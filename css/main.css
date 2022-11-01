@@ -1,0 +1,88 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container{
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body{
+  background-image: url(../images/neww.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.news__imagw{
+  width: 120px;
+}
+
+.news{
+  padding-top: 200px;
+}
+
+.ews__item{
+  border-radius:10px;
+}
+
+.header{
+  z-index: 3;
+  background-image: url(../images/new.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card{
+  width: 100%;
+  max-width: 600px;
+  height: 600px;
+  background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(148,187,233,1) 100%);
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: all 0.5s ease;
+  border: navajowhite;
+}
+
+.card:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: all 0.5s ease;
+}
+
+.card-text{
+  
+  height: 100%;
+  max-height: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__img{
+  height: 100%;
+  max-height: 320px;
+}
+
+.nav__link{
+  transition: all 0.5s ease;
+  font-size: 20px;
+}
+
+.nav__link:hover{
+  color: rgb(227, 118, 118) !important;
+  transition: all 0.5s ease;
+}
+
+.select__link{
+  border: none;
+  background-color: rgba(137, 43, 226, 0.696);
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.select__link:focus{
+outline: none;
+}
