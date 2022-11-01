@@ -3,10 +3,8 @@ let elNavList = document.querySelector(".nav__list");
 let elForm = document.querySelector(".form__search");
 let elSelectLink = document.querySelector(".select__link");
 let elSearchInput = document.querySelector(".form__input");
-const MY_KEY = "772c94aa7c8e40deb5c10536601c571b";
+const MY_KEY = "13b4ea40e25a455abf0aebe5f987f6e5";
 const URL_NEWS = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${MY_KEY}`;
-// const URL_NEWS_EVERY =
-//  `https://newsapi.org/v2/everything?q=${arr}&apiKey=${MY_KEY}`
 
 // fetch create
 function fetchElement(item) {
@@ -42,30 +40,19 @@ function fetchElement(item) {
 }
 fetchElement(URL_NEWS);
 
-// search function
-// function searchElement(item){
-
-// }
-
 // debounse
 function debounce(func, wait, immediate) {
   var timeout;
-
   return function executedFunction() {
     var context = this;
     var args = arguments;
-
     var later = function () {
       timeout = null;
       if (!immediate) func.apply(context, args);
     };
-
     var callNow = immediate && !timeout;
-
     clearTimeout(timeout);
-
     timeout = setTimeout(later, wait);
-
     if (callNow) func.apply(context, args);
   };
 }
@@ -97,7 +84,6 @@ elForm.addEventListener(
 );
 
 // Navbar search
-
 elNavList.addEventListener("click", function (evt) {
   evt.preventDefault();
   elList.innerHTML = "";

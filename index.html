@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/search.css">
+  <link rel="stylesheet" href="./css/loader.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Document</title>
 </head>
@@ -49,19 +50,19 @@
             </li>
           </ul>
 
-          <select class="select__link text-decoration-none ms-5 fs-6">
-            <option value="us">Us</option>
-            <option value="ru">Ru</option>
-            <option value="ch">Ch</option>
-            <option value="se">Se</option>
-          </select>
-
           <form action="javascript:" class="search-bar form__search" autocomplete="off">
             <input class="form__input" type="search" name="search"  required>
             <button class="search-btn" type="submit">
               <span>Search</span>
             </button>
           </form>
+
+          <select class="select__link text-decoration-none  fs-6">
+            <option value="us">Us</option>
+            <option value="ru">Ru</option>
+            <option value="ch">Ch</option>
+            <option value="se">Se</option>
+          </select>
         </div>
       </nav>
     </div>
@@ -71,7 +72,11 @@
     <section class="news">
       <div class="container">
         <ul class="news__list list-unstyled d-flex flex-wrap justify-content-evenly">
-          
+          <!-- <div class="loader">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+          </div> -->
         </ul>
       </div>
     </section>
